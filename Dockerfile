@@ -4,6 +4,11 @@ LABEL maintainer="Thuy Dinh <thuydx@zendgroup.vn>" \
       author="Thuy Dinh" \
       description="A comprehensive docker image to run MySQL 8 applications"
 
+# Set environment variables
+ENV MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+ENV MYSQL_DATABASE=${MYSQL_DATABASE}
+ENV MYSQL_USER=${MYSQL_USER}
+ENV MYSQL_PASSWORD=${MYSQL_PASSWORD}
 ENV DATE_TIMEZONE=UTC
 ENV DEBIAN_FRONTEND=noninteractive
 
