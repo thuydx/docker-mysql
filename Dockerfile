@@ -38,5 +38,5 @@ RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 # ensure Docker uses the script
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 3306 33060
+EXPOSE 3306
 CMD ["mysqld"]
